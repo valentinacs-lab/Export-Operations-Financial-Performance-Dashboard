@@ -23,3 +23,17 @@ Dashboard financiero y de calidad para operaciones de exportación internacional
 Power BI · DAX · Financial Analytics · Data Quality Analysis
 
 
+_ _ _ _ _
+
+Medidas DAX
+
+Ventas Totales USD =SUM ( Fact_Exportaciones[Ventas_USD] )
+
+Rechazo Total USD =SUM ( Fact_Exportaciones[Rechazo_USD] )
+
+% Rechazo =DIVIDE ( [Rechazo Total USD], [Ventas Totales USD] )
+
+Ventas Año Anterior =CALCULATE ([Ventas Totales USD],SAMEPERIODLASTYEAR ( Dim_Fecha[Date] ))
+
+Crecimiento YoY % =
+DIVIDE ([Ventas Totales USD] - [Ventas Año Anterior],[Ventas Año Anterior])
