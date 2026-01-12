@@ -2,6 +2,7 @@
 Financial and quality analytics for export operations across multiple international clients.
 
  Export Operations & Financial Analytics
+ 
 **Descripción:**
 Dashboard financiero y de calidad para operaciones de exportación internacional, integrando información de ingresos y rechazos por cliente.
 
